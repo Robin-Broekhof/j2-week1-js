@@ -1,10 +1,7 @@
-var value1 = 200
+
 var valuepx = "px"
 var directionArray = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"] 
 
-for (i = 0; i < 10; i++){
-    value1++
-}
 var NI = 0
 var NEI = 0
 var EI = 0
@@ -14,19 +11,17 @@ var SWI = 0
 var WI = 0
 var NWI = 0
 
-
-var value_true = value1 + valuepx
+document.getElementById("game-duck-gif").style.top = "260px"
 
 
 function gameStart(){
     setTimeout(function(){ 
 
         var direction = directionArray[Math.floor(Math.random() * directionArray.length)]
-        alert(direction)
         console.log(direction)
 
+
         if(direction == "N"){
-            alert("Yeahh n")
             for (i = 0; i < 100; i++){
                 NI++
             }
@@ -36,12 +31,11 @@ function gameStart(){
             gameStart()
         }
         else if(direction == "NE"){
-            alert("Yeahh ne")
             for (i = 0; i < 100; i++){
                 NEI++
             }
-            var NEIV = NIE + valuepx
-            console.log(NIEV)
+            var NEIV = NEI + valuepx
+            console.log(NEIV)
             document.getElementById("game-duck-gif").style.bottom = NEIV
             document.getElementById("game-duck-gif").style.left = NEIV
             gameStart()
@@ -51,7 +45,6 @@ function gameStart(){
 
 
         else if(direction == "E"){
-            alert("Yeahh e")
             for (i = 0; i < 100; i++){
                 SI++
             }
@@ -61,21 +54,19 @@ function gameStart(){
             gameStart()
         }
         else if(direction == "SE"){
-            alert("Yeahh se")
             for (i = 0; i < 100; i++){
                 SEI++
             }
             var SEIV = SEI + valuepx
-            console.log(SIEV)
-            document.getElementById("game-duck-gif").style.left = SIEV
-            document.getElementById("game-duck-gif").style.top = SIEV
+            console.log(SEIV)
+            document.getElementById("game-duck-gif").style.left = SEIV
+            document.getElementById("game-duck-gif").style.top = SEIV
             gameStart()
         }
 
 
 
         else if(direction == "S"){
-            alert("Yeahh s")
             for (i = 0; i < 100; i++){
                 SI++
             }
@@ -85,21 +76,19 @@ function gameStart(){
             gameStart()
         }
         else if(direction == "SW"){
-            alert("Yeahh sw")
             for (i = 0; i < 100; i++){
                 SWI++
             }
             var SWIV = SWI + valuepx
-            console.log(SWEV)
-            document.getElementById("game-duck-gif").style.top = SWEV
-            document.getElementById("game-duck-gif").style.right = SWEV
+            console.log(SWIV)
+            document.getElementById("game-duck-gif").style.top = SWIV
+            document.getElementById("game-duck-gif").style.right = SWIV
             gameStart()
         }
 
 
 
         else if(direction == "W"){
-            alert("Yeahh w")
             for (i = 0; i < 100; i++){
                 WI++
             }
@@ -109,7 +98,6 @@ function gameStart(){
             gameStart()
         }
         else if(direction == "NW"){
-            alert("Yeahh nw")
             for (i = 0; i < 100; i++){
                 NWI++
             }
@@ -130,7 +118,7 @@ function gameStart(){
         
     
     
-    }, 500);
+    }, 1500);
 
     
 
